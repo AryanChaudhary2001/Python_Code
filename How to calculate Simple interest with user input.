@@ -1,0 +1,7 @@
+print("This program can calculate the simple interest(SI) based on user input of Principal Amount(PA),Time(T) & Rate(R)")
+print("The formula of Simple Interest is: SI=(PA*T*R)/100")
+principal= float(input('Enter Principal Amount:'))
+time= float(input('Enter Time:'))
+rate=float(input('Enter Rate:'))
+simple = (principal * time * rate)/100
+print('Simple Interert for Principal Amount:', principal,',Time:', time,' and Rate:', rate, 'is equal to:', simple )
