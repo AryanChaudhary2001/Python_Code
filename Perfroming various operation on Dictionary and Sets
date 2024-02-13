@@ -1,0 +1,22 @@
+set1={10,20,40,1,5,9}
+print("Number are:",set1)
+print("Largest number is:",max(set1))
+print("Smallest number is:",min(set1))
+
+print("The string is given below:")
+string=("Hello World I have created this porgram to have fun.")
+print(string)
+
+vowel=set("aeiou")
+count=sum(1 for char in string if char in vowel)
+print("Number of vowel in the string:",count)
+
+dict1={'apple':['red','green'],'banana':['yellow'], 'graps':['green','green']}
+print("List of fruits with thier color:",dict1)
+print("Color of fruits are:")
+for fruit, color in dict1.items():
+    print(fruit,":", color)
+
+dict2={'a':10,'b':20,'c':30,'d':40}
+print("Dictionary:",dict2)
+print("The sum of number are:",sum(dict2.values()))
