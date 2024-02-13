@@ -1,0 +1,8 @@
+char = input('Enter to check whether the alphabet is a vowel or a consonant: ').lower()
+
+vowels = ['a', 'e', 'i', 'o', 'u']
+
+if char in vowels:
+    print(char, 'is a vowel.')
+else:
+    print(char, 'is a consonant.')
