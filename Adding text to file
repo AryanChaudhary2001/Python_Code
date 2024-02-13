@@ -1,0 +1,4 @@
+f=open("Sample.txt",'w')
+f.write('Editing the file to show you that we can used python to add text in file')
+f.write('I have created you for the purpose of testing the file operation in python')
+f.close()
