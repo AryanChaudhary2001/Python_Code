@@ -1,0 +1,20 @@
+print("*****Swaping by call by Value.**********")
+def value(x, y):
+    return y, x
+a = 5
+b = 10
+print("Before swapping: a =", a, ", b =", b)
+a, b = value(a, b)
+print("After swapping: a =", a, ", b =", b)
+
+
+print("*****Swaping by call by reference.********")
+def reference(x):
+    x[0], x[1] = x[1], x[0]
+a = 23
+b = 43
+x = [a, b]
+print("Before swapping: a =", x[0], ", b =", x[1])
+reference(x)
+print("After swapping: a =", x[0], ", b =", x[1])
+
