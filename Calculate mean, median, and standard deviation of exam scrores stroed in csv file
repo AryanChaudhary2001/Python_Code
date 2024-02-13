@@ -1,0 +1,20 @@
+import numpy as np
+
+#Given a numpy array containing student exam scores
+exam_scores = np.array([98, 85, 83, 89, 93, 91, 95, 90, 88, 86])
+
+# a) Calculate mean, median, and standard deviation of the exam scores
+mean_score = np.mean(exam_scores)
+median_score = np.median(exam_scores)
+std_deviation = np.std(exam_scores)
+
+print("\nExam Scores:")
+print("Mean:", mean_score)
+print("Median:", median_score)
+print("Standard Deviation:", std_deviation)
+
+# b) Find the indexes of the top 5 scores
+top5_indexes = np.argsort(exam_scores)[-5:][::-1]
+
+print("\nIndexes of Top 5 Scores:")
+print(top5_indexes)
