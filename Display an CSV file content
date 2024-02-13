@@ -1,0 +1,22 @@
+import pandas as pd
+
+# Load the data into a pandas DataFrame
+df = pd.read_csv('sales.csv')
+
+# Display the first five rows of the dataset
+print("First five rows of the dataset:")
+print(df.head())
+
+# Calculate total revenue generated from all sales
+total_revenue = df['Sales Price'].sum()
+print("Total revenue generated from all sales:", total_revenue)
+
+# Determine the number of unique products sold
+num_unique_products = df['Product'].nunique()
+print("Number of unique products sold:", num_unique_products)
+
+# Find the minimum and maximum sales price
+min_sales_price = df['Sales Price'].min()
+max_sales_price = df['Sales Price'].max()
+print("Minimum sales price:", min_sales_price)
+print("Maximum sales price:", max_sales_price)
