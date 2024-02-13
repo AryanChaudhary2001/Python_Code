@@ -1,0 +1,8 @@
+fav=['apple', 'banana', 'peach', 'melon']
+print ("Favourite list of Fruits is: ",fav)
+fav.append('dragon fruit')
+print ('Updated List  after adding another fruit:', fav)
+fav.pop()
+print("Updated list after removing a fruit:",fav)
+a = fav.index('apple')
+print ('Searching for an specific it element in  a list Apple:',a)
