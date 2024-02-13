@@ -1,0 +1,34 @@
+# Define the two matrices A and B
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+
+B = [[11, 12, 13],
+     [14, 15, 16],
+     [17, 18, 19]]
+
+# Perform addition of matrices A and B
+addition_result = [[0, 0, 0],
+                   [0, 0, 0],
+                   [0, 0, 0]]
+for i in range(3):
+    for j in range(3):
+        addition_result[i][j] = A[i][j] + B[i][j]
+
+# Perform multiplication of matrices A and B
+multiplication_result = [[0, 0, 0],
+                         [0, 0, 0],
+                         [0, 0, 0]]
+for i in range(3):
+    for j in range(3):
+        for k in range(3):
+            multiplication_result[i][j] += A[i][k] * B[k][j]
+
+# Print the results
+print("Result of A + B:")
+for row in addition_result:
+    print(row)
+
+print("\nResult of A * B:")
+for row in multiplication_result:
+    print(row)
